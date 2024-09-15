@@ -1,5 +1,6 @@
 package variables;
 import java.util.Scanner;
+// Need Improvement
 public class profit_loss {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

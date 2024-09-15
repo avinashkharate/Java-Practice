@@ -1,7 +1,7 @@
 package variables;
 
 import java.util.Scanner;
-
+// Need improvement
 public class natutal_sum {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

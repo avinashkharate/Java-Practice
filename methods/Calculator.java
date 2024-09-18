@@ -22,6 +22,11 @@ public class Calculator {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
+        System.out.println("1 <sum");
+        System.out.println("2 <sub");
+        System.out.println("3 <div");
+        System.out.println("4 <mul");
+
         System.out.print("enter 1st  number:");
         int num1=sc.nextInt();
 
@@ -30,18 +35,31 @@ public class Calculator {
 
         //System.out.println("sum is "+ sum(num1,num2));
         System.out.print("enter operation number:");
-        int num=sc.nextInt();
+        int choice=sc.nextInt();
        // System.out.println("opeartion :"+num);
 
-    if(num==1)
-        System.out.println(" sum" +sum(num1,num2));
 
-    else if(num==2)
-        System.out.println("sub" +sub(num1,num2));
-    else if(num==3)
-        System.out.println("div" +div(num1,num2));
-    else if(num==4)
-        System.out.println("mul" +mul(num1,num2));
+//    if(choice==1)
+//        System.out.println(" sum" +sum(num1,num2));
+//
+//
+//    else if(choice==2)
+//        System.out.println("sub" +sub(num1,num2));
+//    else if(choice==3)
+//        System.out.println("div" +div(num1,num2));
+//    else if(choice==4)
+//        System.out.println("mul" +mul(num1,num2));
+//    else
+//        System.out.println("invalid choice");
+
+    switch(choice){
+        case 1->System.out.println(" sum" +sum(num1,num2));
+        case 2->System.out.println("sub" +sub(num1,num2));
+        case 3->System.out.println("div" +div(num1,num2));
+        case 4->System.out.println("mul" +mul(num1,num2));
+        default->System.out.println("invalid operation" +choice);
+
+    }
 
 
 
